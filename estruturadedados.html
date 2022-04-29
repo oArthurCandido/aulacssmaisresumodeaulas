@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estrura de dados</title>
+    <link rel="stylesheet" href="styleagile.css" />
+
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/0e6e29b43e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="icones">
+        <p></p>
+
+        <ul>
+          <li>
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/oArthurCandido" target="_blank"
+              ><i class="icon-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <a href="mailto:oarthurcandido@gmail.com" target="_blank"
+              ><i class="icon-mail"></i>oarthurcandido@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=5511994406464&text=Vim%20pelo%20seu%20portf%C3%B3lio!%20"
+              target="_blank"
+              ><i class="icon-whatsapp"></i>WhatsApp</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <h1>Estrutura de dados</h1>
+      <h2>Formas de alocação</h2>
+      <h3>Pilhas</h3>
+      <p>
+        A pilha é a primeira estrura de dados, dados são sempre tratados em
+        conjuntos, o conceito utilizado para tratar de conjuntos de dados é
+        "<strong>array</strong>" em uma array (ou vetor), é possível inserir um
+        ou mais dados, com isso não estamos mais vendo uma caixa, mas sim um
+        armário onde é possível empilhar caixas. A primeira forma de tratar
+        dados dentro de um array é o conceito de pilha (empilhamento) um em cima
+        do outro tanto para inserir quanto para acessar. A pilha é um tipo de
+        organização de dados abstrato, pensado para que seja compreensível que
+        nessa forma de estruturação os dados são inseridos em uma sequencia e
+        acessados na sequencia inversa. O primeiro elemento sempre estará na
+        posição 0 da "prateleira", o segundo na posição 1 e segue. Um elemento
+        na posição -1 estará fora da prateleira (array).
+      </p>
+      <h3>Filas</h3>
+      <p>
+        Na fila, diferente de uma pilha, o elemento que entra primeiro, sai
+        primeiro. Na pilha o último a entrar é o primeiro a sair, o primeiro a
+        entrar é o último a sair. Essas duas formas de estruturação são
+        limitadas em volume de dados.
+      </p>
+      <h3>Listas</h3>
+      <p>
+        Diferente das duas outras formas de estruturação de dados, as listas
+        podem ser infinitas em espaço, pois essas não marcam a ordem de entrada
+        e de saída, mas sim suas posições, por exemplo em ordem alfabética ou
+        numérica
+      </p>
+      <h2>Busca</h2>
+      <h3>Busca sequencial</h3>
+      <p>
+        Uma vez estabelecido um conjunto de dados, é possível buscar um elemento
+        dentro do gupo, isso pode ser feito de forma sequencial, mas essa pode
+        não ser a melhor opção a depender do volume de dados
+      </p>
+      <h3>Busca binária</h3>
+      <p>
+        Permite criar modelos de busca inteligente, mas exige que os dados
+        estejam alocados de forma ordenada "sequencial". Exemplo: busca por um
+        número em uma lista que vai de 1 a 500 organizada de forma sequencial,
+        então eu posso penguntar se esse número é exatamente a metade (250) se
+        sim, encontrei o número, se não, faço nova pergunta, é menor ou maior
+        que 250, se maior busca no intervalo entre 251 e 500 o meio e segue até
+        encontrar. A complexidade de uma busca binária é sempre de ordem
+        logarítmica de base 2, portanto para buscar um elemento entre 64
+        elementos, bastam até 6 passos. Com isso a busca binária se apresenta
+        muito eficiente, mas ela exige que os dados estejam ordenados.
+      </p>
+      <h2>Algoritmos de ordenação</h2>
+      <p>
+        Existem vários tipos de algoritmos de ordenação o mais fácil de
+        implementar é o algoritmo da bolha, nesse algoritmo nós comparamos o
+        elemento com seu par mais próximo e se ele for maior eles trocam de
+        lugares, deixando os número maiores de um lado e os menores do outro,
+        por isso o nome bolha, os números pesados vão para o fundo e os leves
+        vão para cima.
+      </p>
+      <h2>Outras formas de estruturação</h2>
+      <p>
+        Além das estruturas já apresentadas, nesse capítulo o professor Isidro
+        citou o uso do modelo <strong>Hash</strong> que permite através de
+        calculos o local de inserção e de busca de um elemento e o modelo
+        <strong>árvore</strong> que separa entre menor e maior o que está a
+        "direita" ou "esquerda" do elemento.
+      </p>
+    </main>
+  </body>
+  <script src="pilha.js"></script>
+</html>
