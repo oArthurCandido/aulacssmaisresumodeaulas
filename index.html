@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthur Candido</title>
+    <script
+      src="https://kit.fontawesome.com/0e6e29b43e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Icones -->
+    <link rel="stylesheet" href="assets/fonts/style.css" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="icones">
+        <p></p>
+
+        <ul>
+          <li>
+            <a href="https://github.com/oArthurCandido" target="_blank"
+              ><i class="icon-github"></i>Github</a
+            >
+          </li>
+          <li>
+            <a href="mailto:oarthurcandido@gmail.com"
+              ><i class="icon-mail"></i>oarthurcandido@gmail.com</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send?phone=5511994406464&text=Vim%20pelo%20seu%20portf%C3%B3lio!%20"
+              target="_blank"
+              ><i class="icon-whatsapp"></i>WhatsApp</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="name">
+          <h1 class="scale-up-center">Olá, eu sou o Arthur,</h1>
+          <h5>desenvolvedor em desenvolvimento e Profissional de Ecommerce</h5>
+        </div>
+        <div onclick="displayAbout()" id="arrow">
+          <i id="animation" class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div onclick="displayAbout()" style="display: none" id="about">
+          <a href="agile.html" target="_self">Resumo Metodologias Ágeis</a>
+        </div>
+        <div class="form">
+          <form action="">
+            <input type="text" placeholder="Esse form é de enfeite" />
+            <button>enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      function displayAbout() {
+        var arrow = document.getElementById('animation')
+        arrow.classList.toggle('rotate')
+        var display = document.getElementById('about')
+        display.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>
